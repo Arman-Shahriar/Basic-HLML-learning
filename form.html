@@ -3,118 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rish-Site</title>
+    <title>Registration Form</title>
   </head>
   <body>
-    <h1>Hello there!</h1>
+    <h1>Registration Form</h1>
     <form action="details.html" method="get">
-      <input type="text" name="YourName" placeholder="Name here" required>
-      <input type="password" name="password" placeholder="Password here" required>
+      <input type="text" id="userName" name="userName"  placeholder="User Name" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
       <input type="submit" value="Log In">
-      <p>If you don't have one</p>
-      <h2>Sign Up</h2>  
+      <h2>Create an account.</h2>
+      <h3>Sign Up here!</h3>  
     </form>
 
     <form action="details.html" method="get">
 
-      <table>
-        <tr>
-          <td> <input type="text" name="FirstName" placeholder="First Name" required></td>
-          <td><input type="text" name="LastName" placeholder="Last Name" required></td>
-        </tr>
-      </table>
-      <br>
-      <h3>Select your Birthday</h3>
-      <select name="days" required>
-        <option value="">Day</option>
-        <option value="01">01</option>
-        <option value="02">02</option>
-        <option value="03">03</option>
-        <option value="04">04</option>
-        <option value="05">05</option>
-        <option value="06">06</option>
-        <option value="07">07</option>
-      </select>
-      <select name="months" required>
-        <option value="">Month</option>
-        <option value="01">01</option>
-        <option value="02">02</option>
-        <option value="03">03</option>
-        <option value="04">04</option>
-        <option value="05">05</option>
-        <option value="06">06</option>
-        <option value="07">07</option>
-      </select>
-      <select name="year" required>
-        <option value="">Year</option>
-        <option value="2001">2001</option>
-        <option value="2002">2002</option>
-        <option value="2003">2003</option>
-        <option value="2004">2004</option>
-        <option value="2005">2005</option>
-        <option value="2006">2006</option>
-        <option value="2007">2007</option>
-      </select>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
 
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password1" name="password" placeholder="Password" required>
+
+      <label for="password">Confirm Password:</label>
+      <input type="password" id="password2" name="password" placeholder="Confirm Password" required><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="photo">Choose your profile picture:</label>
+      <input type="file" id="photo" name="photo"><br><br>
+
+      <label for="male">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">Male
+      <label for="female">Gender:</label>
+      <input type="radio" id="female" name="gender" value="female">Female
       <br><br>
 
-      <input type="radio" name="gender" id="male" value="male" required><label for="male">Male</label>
-      <input type="radio" name="gender" id="female" value="female" required><label for="female">Female</label>
-
+      <label for="english">Language:</label>
+      <input type="checkbox" id="english" name="language" value="bangla">Bangla
+      <label for="bangla">Language:</label>
+      <input type="checkbox" id="bangla" name="language" value="english">English
       <br><br>
 
-      <label>
-        <input type="checkbox" name="terms" value="terms" required>Terms and condition
-      </label>
+      <label for="department">Select your Department:</label>
+      <select name="department" id="department">
+        <option value="CSE">CSE</option>
+        <option value="ME">ME</option>
+        <option value="EEE">EEE</option>
+      </select>
       <br><br>
-      <input type="submit" name="SignUp" value="Sign Up">
+
+      <label for="message">Message:</label><br>
+      <textarea name="message" id="message" cols="50" rows="10"></textarea>
+
+      <br><br>
+      <label for="agreement">I accept to Log-In:</label>
+      <input type="checkbox" id="agreement" name="agreement">
+
+      <br><br>
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+
+
     </form>
-
-    <br><br>
-
-    <table>
-
-      <caption>Dummy Data</caption>
-      <colgroup>
-        <col span="2" style="background-color: rgb(118, 219, 143);">
-        <col span="2" style="background-color: rgb(255, 228, 110);">
-      
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Address</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Arman</td>
-          <td>arman@email.com</td>
-          <td>12345</td>
-          <td>Xiasha</td>
-        </tr>
-        <tr>
-          <td>Arman</td>
-          <td>arman@email.com</td>
-          <td>12345</td>
-          <td>Xiasha</td>
-        </tr>
-        <tr>
-          <td>Arman</td>
-          <td>arman@email.com</td>
-          <td>12345</td>
-          <td>Xiasha</td>
-        </tr>
-        <tr>
-          <td>Arman</td>
-          <td>arman@email.com</td>
-          <td>12345</td>
-          <td>Xiasha</td>
-        </tr>
-      </tbody>
-    </table>
-
   </body>
 </html>
